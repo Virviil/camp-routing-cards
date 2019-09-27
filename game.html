@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="game">
+        <div v-for="card in cards">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-header-familty">Семья:</div>
+                    <div class="card-header-logo">
+                        <img src="logo.png">
+                    </div>
+                    <div class="float-clear"></div>
+                </div>
+                <hr>
+                <div class="card-body">
+                    <div class="card-body-line">
+                        <div class="card-body-stage">
+                            <img v-bind:src="card[0] + '.png'">
+                            <span>1</span>
+                        </div>
+                        <div class="card-body-stage">
+                            <img v-bind:src="card[1] + '.png'">
+                            <span>2</span>
+                        </div>
+                        <div class="card-body-stage">
+                            <img v-bind:src="card[2] + '.png'">
+                            <span>3</span>
+                        </div>
+                    </div>
+
+                    <div class="card-body-line">
+                        <div class="card-body-stage">
+                            <img v-bind:src="card[3] + '.png'">
+                            <span>4</span>
+                        </div>
+                        <div class="card-body-stage">
+                            <img v-bind:src="card[4] + '.png'">
+                            <span>5</span>
+                        </div>
+                        <div class="card-body-stage">
+                            <img v-bind:src="card[5] + '.png'">
+                            <span>6</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

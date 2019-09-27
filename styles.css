@@ -1,0 +1,48 @@
+.card {
+    border: solid 2px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.card-header {
+    padding: 0px 50px 0px 50px;
+}
+
+.card-header-familty {
+    float: left;
+    font-size: 3em;
+    margin-top: 50px;
+}
+
+.card-header-logo {
+    float: right;
+}
+
+.card-header-logo img {
+    width: 150px;
+    position: relative;
+}
+
+.float-clear {
+    clear: both;
+}
+
+.card-body-line {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-body-stage {
+  float: left;
+  align-content: center;
+}
+
+.card-body-stage img {
+    width: 130px;
+  }
+
+.card-body-stage span {
+    display: block;
+    text-align: center;
+    font-size: 3em;
+}
